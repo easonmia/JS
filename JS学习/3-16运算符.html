@@ -8,7 +8,8 @@
 <body>
     +
     -
-    <!-- * 乘法运算符（ 1.两个正数或负数相乘的结果还是正数，而如果只有一个操作数有符号结果就为负数，如果乘
+    <!-- * 乘法运算符（ 
+        1.两个正数或负数相乘的结果还是正数，而如果只有一个操作数有符号结果就为负数，如果乘
     积超过了ECMAscript数值的表示范围，则返回Infinity或-Infinity
         2. 如果一个操作数是NaN，结果是NaN，
         3.Infinity * 0 = Nan
@@ -20,10 +21,23 @@
         var n1 = 999999e9999;
         var n2 = 0.111111111111111111111111111 ;
         var t = n1 / n2 ;的结果超出了es的数值的表示范围，那么结果就infinity
-        console.log(t) ;
+        console.log(t) ;=> -Infinity
+        // n1/ n2 的结果超出了es的数值的表示范围，那么结果就是
+        Infinity 
+        // 2. 如果一个操作数是NaN那么结果一定是NaN
+        var n3 = NaN;
+        var t2 = n1/ n3; =>
+        var t3 = n3 / n2 ; =>
+        //3, 如果是Infinity 和 Infinity 进行相除的结果是NaN
+        console.log(Infinity / Infinity)
+        
+        //4. 0 / 0  0被除，如果是0那么结果是NaN ， 如果不是0那么结果我就是Infinity
+        console.log( 0 / 0)  ('9/0=' + (9/0)); // =>NaN
 
-
+        //  5. 如果Infinity 除以任何数，结果都是{ - } 
+        console.log('Infinity / 8 =' + (Infinity / 8 )) => Infinity
 -->
     %求余数
+    
 </body>
 </html>
