@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 9 ;
+        i++;   // 自增运算符，自己增加1
+        // i= i + 1 ；
+        console.log(i); // =>10
+
+        ++i;  
+        console.log(i); // =>11
+        // 自加运算符在前面的时候，先进行自加运算，再参与表达式的运算
+        // ++i  优先 i++
+
+        // var i2 = ++i + 3; /i = 11 , ++i =>12 12+3=>15
+
+
+        var i2 = (i++)+3; // i =11, i+3=>14 , 最后人 i = i+ 1
+        console.log(i2); // =>14
+
+        // var a, i = 0 ;
+        // i++ ; i=1;自增1 相当于 i = i+1
+        // a = 3 + (i++) ;a = 4 i = 2 ,先计算再自增 
+        // a = 3 + (++i) ; 先自增再计算 
+        // 前置自增会影响到语句的运算结果，后置自增等语句执行完成后再对变量进行增加处理
+
+
+        var t = 11;
+        t--;
+        // t = t -1 ;
+        console.log(t);
+
+
+    </script>
+</body>
+</html>
