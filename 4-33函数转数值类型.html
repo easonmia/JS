@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 类型转换
+        // 1.字符串；2.数字；3.boolean
+
+        // 显示的类型转换
+        // 转换为数值类型：Number（mix） ，parselnt（string，radix），parseFloat（string）
+        // 转换为字符串类型：String（mix）
+        // 转换为布尔类型：Boolean（mix）
+
+        // Number（）函数转换
+        // Number（mix）函数，可以将任意类型的参数mix转换为数值类型
+        // 如果是布尔值，true和false分别背转换为1和0
+        // Number（true）//1
+        // 如果是数字值，返回本身
+        // 是null——0
+        // underfined——NaN
+        // 字符串，遵循以下规则
+        // 如果字符串只包含数字，则将其转换为十进制（忽略前导0）
+        // 包含有效浮点格式，则转换为浮点数字（忽略前导0）
+        // 空字符串——转换为0
+        // 包含非以上格式——NaN
+
+        // 单加法操作跟其Number函数效果一致；
+        // var b ，a =  false；
+        // b = +a；——b=0
+        // b = + "123" —— b =123 ，字符串转为数字
+
+    </script>
+</body>
+</html>
