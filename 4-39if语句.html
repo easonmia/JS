@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if语句：条件分支语句
+        // 语法：
+        // if（表达式）语句；
+        // if（表达式）
+        //     语句；
+        // if（表达式）
+        // （语句块；
+        // ）
+        // 语义：当表达式为真多时候，执行后面的语句
+        // demo：
+        // if（233*2 > 456）{
+        //     a = 4 ;
+
+        // }
+        // 注意：当if语句的执行语句只有单行的时候，可以申略花括号，但是建议不申略
+
+        // 第一种写法
+        if (4 < 2 ) console.log(' 4 > 2 为真');
+        // 如果满足 (表达式的值为真)那么就执行后面的语句
+
+        // 第二种
+        if ( 3 < 9)
+            console.log(222);
+
+        //第三种写法，如果我想要在满足条件的时候，执行多条语句
+        if(0 === false){
+            console.log('1');
+            console.log('2');
+            console.log('3');
+
+        }
+        //语句块的结尾不需要加分号，有花括号代表if分支句的结束
+        
+        console.log('if结束后的')
+
+        var a = null; //如果一个变量，声明完后，没有赋初始，那么它的值就是undefined
+        if(!a) {
+            console.log(a);
+        }   //即使if语句只有一行代码，也要写上花括号
+    </script>
+</body>
+</html>
