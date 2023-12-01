@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 语法格式：
+        // if(表达式)(
+        //     if(表达式2)(
+        //         if(表达式3)(
+        //             console.log(1)
+        //         )
+        //     )
+        // )
+
+        // 案例如果变量a是数字类型，那么判断其是否大于9，如果大于9则输出'大于9'，否则输出：'非法类型'
+
+        //第一步：判断变量a是否是数字
+        var a = 7;
+        //判断变量a的类型，使用typeof可以获取它的类型
+        if( type(a) === "number"){
+            if( a > 9) {
+                console.log('大于9');
+
+            }else{
+                console.log('非法类型');
+            }
+        }
+        //第二步：判断他的大小
+        // if语句练习
+        // 备注：Math.random()方法会随机返回0-1之间的小数
+        // 1.声明两个变量a,b,随机赋值0-10之间的数，然后如果a > b 那么输出a， 如果 a = b输出 =号
+        // ，如果 a < b输出老马
+        // 2.给一定一个数值变( 1-7之间)对应输出星期几，比如：1输出星期一，2输出星期2
+        // 3.判断用户名是否为空
+        // 4.判断一个变量是不是字符串。如果是字符串请将字符串转为数值类型并返回结果，佛则，直接把变量转成boolean类型输出结果
+
+    </script>
+</body>
+</html>
