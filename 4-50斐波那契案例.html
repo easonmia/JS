@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //斐波那契数列：0，1，1，2，3，5，8，13，21，34.。。
+        //F(0) = 0,F(1)=1.F(n) = F(n-1)+F(n-2)(n>=2,n{N*})
+        //规律：前面两数到和等于后面的值
+        // 求F（n）的值，n>=3;
+        // 规定：
+        var fn1 = 1,    //第一个数
+            fn2 =1 ,    //第二个数
+            n = 20, //求f（20）的值，n=20
+            i,      //  循环索引
+            result; // 最终的结果
+        
+            for(i =3 ; i <=n; i++){
+                result = fn1 + fn2;
+                //f(n) = f(n-1)+f(n-2)
+                //2 = 1 + 1 第一次循环
+                // 3 = 2 + 1 二次
+                // 5 = 3 + 2 第三次
+                // 8 = 5 + 3 第四次循环
+                //下次循环的时候，fn1 fn2怎么变？
+                //下次循环的时候 fn1变成了当前result，fn2变成了当前的fn1
+                fn2 = fn1;
+                fn1 = result;
+                console.log(result+'');
+            }
+            console.log(result)
+
+
+    </script>
+</body>
+</html>
