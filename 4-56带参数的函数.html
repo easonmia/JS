@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //第二：带参数的函数
+        //定义一个函数，实现求两个数的乘积
+        function mult(a,b){ // a\b 形参
+            // a * b ;
+            console.log(a * b);
+            return a * b;// 把a 和b 的相乘的结果返回到函数调用者的地方
+        }
+
+        //2\4 实参
+        var t =  mult(2,4);//执行mult 函数。给函数体传递2和4两个参数，a*b的结果给了t
+        console.log('t =' + t);
+
+    </script>
+</body>
+</html>
