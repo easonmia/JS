@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 计算 1到n的和 
+        function sum(n){
+            //1到n的计算
+            //-9  0 == 0 'ssss ' "0" == 0  null  ! =0  undeifned  != 0
+            // 如果用户传来的数据不是数字类型，返回NaN
+            //如果传来的数据不是大于1的数字：返回 0；
+            if (typeof (n) !='number'){
+                return NaN;//直接返回NaN ，如果函数中执行遇到return语句，函数直接结束
+            }
+            //有 return 不用else
+            if(n < 1){
+                return 0; //直接写 return 和没有返回值的函数，都会返回一个默认的undifened
+            }
+            // 大于1 的情况
+            var i =1, result = 0;
+            while ( i <= 0){
+                result += i;
+                i++;
+            }
+
+            return result;//把计算的和返回
+            }
+        
+      var t =  sum(7);// 1+ 2+3+....7
+      console.log(t)
+
+    </script>
+</body>
+</html>
