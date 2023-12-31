@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 给一个数字，返回相应的星期
+        // 2:星期二  'sss'：不是星期的格式
+        // getWeekName(3);
+        function gerWeekName(n){
+            //第一步 判断n的数据类型，
+            if(typeof(n)!='number' || n > 7 || n <1){
+                return '不是正常的日期格式';
+
+            }
+            //第二步 根据 n返回的对应星期
+            var t = ''
+            switch (n){
+                case 1:
+                    t = '星期一';
+                    break;
+                case 2:
+                    t = '星期2';
+                    break;
+                case 3:
+                    t = '星期3';
+                    break;
+                case 4:
+                    t = '星期4';
+                    break;
+                case 5:
+                    t = '星期5';
+                    break;
+                case 6:
+                    t = '星期6';
+                    break;
+                default:
+                    t = '星期日';
+
+            }
+            return t ;
+
+        }
+
+       console.log(getWeekName(5));
+       console.log(getWeekName(9));
+       console.log(getWeekName(''));
+       console.log(getWeekName(null));
+    </script>
+</body>
+</html>
